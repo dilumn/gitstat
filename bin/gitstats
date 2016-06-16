@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 
+require "gitstats"
 
-puts "Git Stats working fine"
+Gitstats::CLI.new(ARGV)

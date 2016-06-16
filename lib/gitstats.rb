@@ -1,5 +1,9 @@
-require "gitstats/version"
+require 'gitstats/cli'
 
 module Gitstats
-  # Your code goes here...
+  
+	class << self
+
+	end
+
 end
