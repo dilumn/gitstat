@@ -9,18 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["DilumN"]
   spec.email         = ["dilumnavanjana@gmail.com"]
 
-  spec.summary       = %q{Git Log implementation for Ruby}
-  spec.description   = %q{Git log for a git repository to get stats}
+  spec.summary       = %q{Git Log for each author in the repository with added / deleted total number of lines & total commits}
+  spec.description   = %q{Gitstats is a ruby gem for `git log` your repository to get valuable informations for each Author in your repository}
   spec.homepage      = "http://dilumn.github.io"
   spec.license       = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   spec.files = %w(LICENSE.txt README.md gitstats.gemspec) + Dir['bin/*'] + Dir['lib/**/*.rb']
   spec.executables   = Dir['bin/*'].map { |f| File.basename(f) }

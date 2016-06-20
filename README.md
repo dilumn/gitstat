@@ -1,38 +1,40 @@
 # Gitstats
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gitstats`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gitstats is a ruby gem for `git log` your repository to get valuable informations for each Author in your repository
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'gitstats'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install gitstats
+$ gem install gitstats
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing the gem, go to your repository & just type `gitstats`. Then you will get the total number of added lines / deleted lines & commits by each author in the repository.
 
-## Development
+```
+Author >>>>  //de	
+lines added: +11839 lines 	 | 	 deleted: -16271 lines 	 | 	 total commits: 368
+************************************************************************************
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Author >>>>  Adrian Hosey	
+lines added: +52 lines 	 | 	 deleted: -10 lines 	 | 	 total commits: 2
+************************************************************************************
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Author >>>>  Alex Grigorovich	
+lines added: +3 lines 	 | 	 deleted: -1 lines 	 | 	 total commits: 1
+************************************************************************************
+
+```
+
+To get total number of added lines / deleted lines & commits by each author in a given period,
+
+`gitstats time 05/22/2015 04/30/2016`
+
+
+More features coming soon.....
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gitstats. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dilumn/gitstats. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
