@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gitstats/version'
+require 'gitstat/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gitstats"
-  spec.version       = Gitstats::VERSION
+  spec.name          = "gitstat"
+  spec.version       = Gitstat::VERSION
   spec.authors       = ["DilumN"]
   spec.email         = ["dilumnavanjana@gmail.com"]
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
 
-  spec.files = %w(LICENSE.txt README.md gitstats.gemspec) + Dir['bin/*'] + Dir['lib/**/*.rb']
+  spec.files = %w(LICENSE.txt README.md gitstat.gemspec) + Dir['bin/*'] + Dir['lib/**/*.rb']
   spec.executables   = Dir['bin/*'].map { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 

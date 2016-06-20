@@ -1,5 +1,5 @@
 
-module Gitstats
+module Gitstat
   class CLI
 
   	def initialize(*)
