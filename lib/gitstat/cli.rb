@@ -13,7 +13,8 @@ module Gitstat
 
   	def blank
   		str = %q{git log --format='%aN'  | sort -u | while read name; do echo "Author >>>> " "$name\t"; git log --numstat --pretty="%H" --author="$name" | awk 'NF==3 {plus+=$1; minus+=$2} NF==1 {total++} END {printf("lines added: +%d lines \t | \t deleted: -%d lines \t | \t total commits: %d\n**************************************************************************\n\n", plus, minus, total)}' -; done}
-  		exec str
+  		
+      system "bash", "-c", str
   	end
 
   	def time(*)
