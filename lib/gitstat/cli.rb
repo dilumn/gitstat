@@ -1,4 +1,3 @@
-
 module Gitstat
   class CLI
 
