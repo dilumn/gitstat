@@ -8,7 +8,6 @@ module Gitstat
   		elsif ARGV[0] == "time"
   			time  					
   		end
-  			
   	end
 
   	def blank
