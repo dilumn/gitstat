@@ -23,5 +23,4 @@ module Gitstat
 			system "bash", "-c", str
 		end
 	end
-	
 end
