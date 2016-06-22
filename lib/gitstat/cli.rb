@@ -5,7 +5,7 @@ module Gitstat
 			if ARGV.empty?
 				blank
 			elsif ARGV[0] == "time"
-				time  					
+				time            
 			end
 		end
 
@@ -23,5 +23,4 @@ module Gitstat
 			system "bash", "-c", str
 		end
 	end
-	
 end
