@@ -4,22 +4,22 @@ Gitstat is a ruby gem for `git log` your repository to get valuable informations
 
 ## Installation
 
-$ gem install gitstat
+`$ gem install gitstat`
 
 ## Usage
 
 After installing the gem, go to your repository & just type `gitstat`. Then you will get the total number of added lines / deleted lines & commits by each author in the repository.
 
 ```
-Author >>>>  //de	
+Author >>>>  //de
 lines added: +11839 lines 	 | 	 deleted: -16271 lines 	 | 	 total commits: 368
 ************************************************************************************
 
-Author >>>>  Adrian Hosey	
+Author >>>>  Adrian Hosey
 lines added: +52 lines 	 | 	 deleted: -10 lines 	 | 	 total commits: 2
 ************************************************************************************
 
-Author >>>>  Alex Grigorovich	
+Author >>>>  Alex Grigorovich
 lines added: +3 lines 	 | 	 deleted: -1 lines 	 | 	 total commits: 1
 ************************************************************************************
 
@@ -27,7 +27,11 @@ lines added: +3 lines 	 | 	 deleted: -1 lines 	 | 	 total commits: 1
 
 To get total number of added lines / deleted lines & commits by each author in a given period,
 
-`gitstat time 05/22/2015 04/30/2016`
+`gitstat -t 05/22/2015 04/30/2016`
+
+
+To get total number of added lines / deleted line & commits by author
+`gitstat -a AUTHORNAME`
 
 
 More features coming soon.....
