@@ -31,6 +31,7 @@ To get total number of added lines / deleted lines & commits by each author in a
 
 
 To get total number of added lines / deleted line & commits by author
+
 `gitstat -a AUTHORNAME`
 
 
